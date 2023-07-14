@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap project</title>
+  <!-- TODO 1: Add the Bootstrap link here. -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+  <style>
+    /* TODO 4: Use flexbox to center the card in the vertical and horizontal center. */
+    .flex-container{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      gap: 2rem;
+    }
+
+    .card{
+      background-color: beige;
+      border-radius: 15px;
+      padding: 0;
+      margin: 0;
+    }
+
+    .card-image-top{
+      border-radius: 10px;
+      height: 250px;
+      width: 100%;
+    }
+
+    .btn{
+      position: relative;
+      left: 85px;
+    }
+
+    .card-title{
+      text-align: center;
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="flex-container">
+    <!-- TODO 2: Add the Bootstrap Prebuilt Card here -->
+    <div class="card" style="width: 18rem;">
+      <img src="./flower.jpg" class="card-image-top" alt="a sunflower">
+      <div class="card-body">
+        <h5 class="card-title">Sunflower</h5>
+        <p class="card-text">A plant, usually having a very tall stem and a single large, round, flat, yellow flower,
+          with many long, thin, narrow petals close together and they usually face towards sun and face down at the night</p>
+        <a href="https://www.google.com" class="btn btn-primary">Google</a>
+      </div>
+    </div>
+    <!-- TODO 3: Change the image src to display the flower.jpg image. -->
+  </div>
+</body>
+
+</html>
